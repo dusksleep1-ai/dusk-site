@@ -78,6 +78,22 @@ footer span:first-child { color:#f3f4f6; font-weight:700; letter-spacing:.3em; }
 .blueprint-list p { grid-column:2; color:#9aaec3; font-size:13px; line-height:1.55; }
 .blueprint-note { grid-column:1 / -1; color:#97a9bf; max-width:760px; padding-top:13px; font-size:13px; line-height:1.7; }
 @media(max-width:700px) { .hardware,.blueprint { padding:68px 6%; } .hardware h2,.blueprint h2 { font-size:clamp(37px,10vw,45px); } .hardware-intro { margin-bottom:30px; } .hardware-figure { border-radius:10px; } .hardware-figure figcaption { font-size:11px; } .component-grid { grid-template-columns:1fr; gap:0; margin-top:30px; } .component-grid article,.component-grid article:first-child,.component-grid article:last-child { padding:22px 0 25px; border-bottom:1px solid #45627b52; } .component-grid article:last-child { border-bottom:0; } .component-grid h3 { margin:12px 0 8px; font-size:23px; } .blueprint { grid-template-columns:1fr; gap:22px; } .blueprint-note { grid-column:1; } }
+
+.comparison { background:#0d1729; padding:96px 5%; border-top:1px solid #ffffff1e; }
+.comparison-head { max-width:820px; }
+.comparison h2 { font-size:clamp(39px,5vw,62px); margin:16px 0 21px; }
+.comparison-head p { color:#b8c9db; line-height:1.72; max-width:680px; }
+.comparison-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:43px 0 28px; }
+.comparison-card { border:1px solid #7899bb55; border-radius:15px; padding:31px; background:#132239; }
+.comparison-card.dusk { background:linear-gradient(140deg,#1e3857,#14263e); border-color:#a7c4dd88; }
+.comparison-card .label { color:#9fc0da; font-weight:700; font-size:11px; letter-spacing:.18em; text-transform:uppercase; }
+.comparison-card h3 { font-family:Georgia,serif; font-size:31px; line-height:1.13; font-weight:400; letter-spacing:-.035em; margin:17px 0 18px; }
+.comparison-card p { color:#b6c5d6; line-height:1.65; font-size:14px; }
+.comparison-card .price { font-family:Georgia,serif; color:#f4f5f3; font-size:37px; letter-spacing:-.04em; margin:0 0 13px; }
+.comparison-card .price span { display:block; margin-top:3px; font-family:Inter,Arial,sans-serif; font-size:13px; letter-spacing:0; color:#aec1d6; }
+.comparison-footnote { font-size:12px; color:#9eafc3; line-height:1.6; max-width:830px; margin-bottom:28px; }
+.comparison-footnote a { text-decoration:underline; text-underline-offset:2px; }
+@media(max-width:700px) { .comparison { padding:70px 6%; } .comparison h2 { font-size:clamp(38px,10vw,45px); } .comparison-grid { grid-template-columns:1fr; gap:13px; margin-top:30px; } .comparison-card { padding:25px; } .comparison-card h3 { font-size:27px; } .comparison-card .price { font-size:34px; } }
 </style></head><body><div class="file-card"><div class="dusk-page">
       <header class="topbar">
         <a class="brand" href="#top" aria-label="DUSK home"><span class="brand-moon">◓</span><span>DUSK</span></a>
@@ -127,7 +143,16 @@ footer span:first-child { color:#f3f4f6; font-weight:700; letter-spacing:.3em; }
           <p>Choose the temperature you want for your bed. DUSK is designed to move heated or cooled water through a thin topper and hold your setting, rather than just blowing air across you. Built around affordable comfort and low running costs. Still a concept, with the waitlist open now.</p>
           <a class="button primary" href="#waitlist">Join the waitlist <span aria-hidden="true">↗</span></a>
         </section>
-        <section class="waitlist" id="waitlist" aria-labelledby="waitlist-title"><div class="waitlist-orb"></div><div class="waitlist-content"><span class="section-index">06 / EARLY INTEREST</span><h2 id="waitlist-title">Sleep is personal.<br/><em>So is the perfect temperature.</em></h2><p>DUSK is still a concept. If you'd want to hear when it moves forward, join the early-interest list. No purchase or deposit.</p><a class="button primary" href="https://forms.gle/ggQB5fitvWmUTbvX6">Join the waitlist <span aria-hidden="true">↗</span></a><small>One email field. No purchase or deposit.</small></div></section>
+        <section class="comparison" aria-labelledby="comparison-title">
+          <div class="comparison-head"><span class="section-index">06 / THE DIFFERENCE</span><h2 id="comparison-title">Temperature control.<br><em>Without the luxury price tag.</em></h2><p>Active bed temperature control exists, but premium systems cost a lot. DUSK's idea is to focus on the part you feel: a water-circulating topper that could warm or cool the bed, without building a whole sleep-tech platform around it.</p></div>
+          <div class="comparison-grid">
+            <article class="comparison-card"><span class="label">PREMIUM SYSTEMS / EIGHT SLEEP</span><h3>More features. A premium price.</h3><div class="price">From £1,799 <span>UK starting price</span></div><p>Eight Sleep's Pod 6 combines active heating and cooling with sleep tracking and other connected features. That may be right for some people, but it puts active bed cooling at a premium price.</p></article>
+            <article class="comparison-card dusk"><span class="label">THE DUSK CONCEPT</span><h3>Focus on the temperature.</h3><div class="price">A lower-price aim <span>not a selling price</span></div><p>DUSK is being designed around a simpler water loop and bedside unit. The aim is accessible heating and cooling, not a claim to match every feature of a premium system. Pricing has not been set.</p></article>
+          </div>
+          <p class="comparison-footnote">Eight Sleep Pod 6 UK starting price checked 27 September 2026: <a href="https://www.eightsleep.com/uk/" target="_blank" rel="noopener noreferrer">Eight Sleep UK</a>. Prices and configurations can change. DUSK is a concept, not a product for sale; its price and performance have not been validated.</p>
+          <a class="button primary" href="#waitlist">Join the waitlist <span aria-hidden="true">↗</span></a>
+        </section>
+        <section class="waitlist" id="waitlist" aria-labelledby="waitlist-title"><div class="waitlist-orb"></div><div class="waitlist-content"><span class="section-index">07 / EARLY INTEREST</span><h2 id="waitlist-title">Sleep is personal.<br/><em>So is the perfect temperature.</em></h2><p>DUSK is still a concept. If you'd want to hear when it moves forward, join the early-interest list. No purchase or deposit.</p><a class="button primary" href="https://forms.gle/ggQB5fitvWmUTbvX6">Join the waitlist <span aria-hidden="true">↗</span></a><small>One email field. No purchase or deposit.</small></div></section>
       </main>
       <footer><span>DUSK</span><span>Your bed, your temperature.</span><span>Concept stage · 2026</span></footer>
     </div></div></body></html>
